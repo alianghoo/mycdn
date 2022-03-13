@@ -42,7 +42,7 @@ var toTop = new function() {
 var stui = {
     'common': {
         'lazyload': function() {
-            $.getScript("jquery.lazyload.min.js", function() {
+            $.getScript("/gh/frcdn/mycdn/js/jquery.lazyload.min.js", function() {
                 $(".lazyload").lazyload({
                     skip_invisible: false,
 					effect: "fadeIn",
