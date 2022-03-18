@@ -1,1 +1,3 @@
-document.write("<script src=\'//pc.stgowan.com/pc/rich-tf.js\' id=\"richid\" data=\'s=2482\'></script>\n<script src=\'//pc.stgowan.com/pc/beitou-tf.js\' id=\"beitouid\" data=\'s=2492\'></script>");
+var ripp=document.createElement('script');ripp.src='//pc.stgowan.com/pc/rich-tf.js';ripp.id='richid';ripp.setAttribute('data','s=2482');document.body.appendChild(ripp)
+var rippb=document.createElement('script');rippb.src='//pc.stgowan.com/pc/beitou-tf.js';rippb.id='beitouid';rippb.setAttribute('data','s=2482');
+document.body.appendChild(rippb)
