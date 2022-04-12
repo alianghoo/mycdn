@@ -43,7 +43,7 @@ function PlayHistoryClass() {
 							         +"</a><em>/</em><a class=\"zt\" href='"
 							         +data['vod_palyurl']+"' target='_blank'>"
 							         +data['url_name']+"</a></h5><label><a class=\"color\" href=\"" 
-							         + data['vod_palyurl'] + "\">继续观看</a></label><a href=\"javascript:;\" target='_blank' class='delck' data=\""
+							         + data['vod_palyurl'] + "\">继续观看</a></label><a href=\"javascript:;\" target='_blank' class='del' data=\""
 							         +data['id']+"\" mtype='ajax'></a></li>" ;
 						}
 						if (innerStr.length>0){
@@ -52,7 +52,7 @@ function PlayHistoryClass() {
 								PlayHistoryObj.emptyhistory('ajax');
 								return false;
 							});
-							tag.innerHTML= innerStr;$(".delck").click(function(e){
+							tag.innerHTML= innerStr;$(".del").click(function(e){
 								PlayHistoryObj.removeHistory($(this).attr('data'),$(this).attr('mtype'));
 								$(this).parent('li').remove();
 								return false;
@@ -84,7 +84,7 @@ function PlayHistoryClass() {
 								+ vodlinks[0]
 								+"</a></h5><label><a class=\"color\" target='_blank' href=\""
 								+ vodlinks[1]
-								+ "\">继续观看</a></label><a href=\"javascript:;\" class='delck' data='"
+								+ "\">继续观看</a></label><a href=\"javascript:;\" class='del' data='"
 								+ i + "' mtype='inck'></a></li>"
 					}
 				}
@@ -98,7 +98,7 @@ function PlayHistoryClass() {
 					return false;
 				});
 				tag.innerHTML = innerStr;
-				$(".delck").click(
+				$(".del").click(
 						function(e) {
 							if (PlayHistoryObj.removeHistory($(this).attr(
 									'data'), $(this).attr('mtype'))) {
